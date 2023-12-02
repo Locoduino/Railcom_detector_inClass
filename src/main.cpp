@@ -2,7 +2,7 @@
 /*
 
    Programme de lecture, de decodage et d'affichage des messages Railcom ©
-   qui retourne l'adresse d'un decodeur (adresse courte ou longue) sur le port serie (115200 bauds)
+   qui retourne l'adresse d'un decodeur (adresse courte ou longue) sur le port serie (250000 bauds)
 
    Fonctionne exclusivement sur ESP32
    © christophe bobille - locoduino.org
