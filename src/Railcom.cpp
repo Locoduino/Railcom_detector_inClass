@@ -153,7 +153,7 @@ void IRAM_ATTR Railcom::parseData(void *p)
     {
       if (xQueueReceive(pThis->xQueue1, &inByte, pdMS_TO_TICKS(portMAX_DELAY)) == pdPASS)
       {
-        if (inByte > 0x0F && inByte < 0xF0)
+        if (inByte >= 0x0F && inByte <= 0xF0)
         {
           if (check_4_8_code())
           {
