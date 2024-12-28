@@ -18,17 +18,17 @@
 #include <Arduino.h>
 #include "Railcom.h"
 
-#define VERSION "v 1.6"
+#define VERSION "v 1.7"
 #define PROJECT "Railcom Detector ESP32"
 #define AUTHOR  "christophe BOBILLE Locoduino : christophe.bobille@gmail.com"
 
-Railcom railcom_0(GPIO_NUM_0, GPIO_NUM_19);   // Instance de la classe Railcom
-Railcom railcom_1(GPIO_NUM_16, GPIO_NUM_17); // Instance de la classe Railcom
-Railcom railcom_2(GPIO_NUM_13, GPIO_NUM_14); // Instance de la classe Railcom
+Railcom railcom_0(GPIO_NUM_14, GPIO_NUM_19);   // Instance de la classe Railcom
+Railcom railcom_1(GPIO_NUM_16, GPIO_NUM_17);  // Instance de la classe Railcom
+Railcom railcom_2(GPIO_NUM_13, GPIO_NUM_14);  // Instance de la classe Railcom
 
 void setup()
 {
-  Serial.begin (250000);
+  Serial.begin (250000); // <- ATTENTION
 
   Serial.printf("\n\nProject :    %s", PROJECT);
   Serial.printf("\nVersion :      %s", VERSION);
